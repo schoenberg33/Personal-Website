@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Old Chester-Nuts | Michael Chamberlain</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =================================
+           OLD CHESTER-NUTS PAGE
+           ================================= */
+
+        .chester-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 55px 40px 90px;
+        }
+
+
+        /* BACK LINK */
+
+        .chester-page .work-back {
+            margin-bottom: 35px;
+        }
+
+        .chester-page .work-back a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .chester-page .work-back a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* FRONTISPIECE */
+
+        .chester-frontispiece {
+            width: 620px;
+            max-width: 100%;
+            margin: 0 auto 45px;
+
+            padding: 10px;
+
+            background: white;
+            border: 1px solid rgba(11, 27, 46, 0.2);
+            border-radius: 3px;
+        }
+
+        .chester-frontispiece img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+
+        /* MAIN TEXT COLUMN */
+
+        .chester-text {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+
+        /* TITLE */
+
+        .chester-text h1 {
+            margin: 0;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(3rem, 5vw, 4.3rem);
+            font-weight: normal;
+            line-height: 1.05;
+            letter-spacing: -0.025em;
+
+            text-align: center;
+        }
+
+
+        /* SUBTITLE */
+
+        .chester-text .chester-subtitle {
+            margin: 12px 0 20px;
+
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.4;
+
+            text-align: center;
+        }
+
+
+        /* DECORATIVE LINE */
+
+        .chester-title-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            margin: 28px 0 30px;
+        }
+
+        .chester-title-line::before,
+        .chester-title-line::after {
+            content: "";
+
+            width: 90px;
+            height: 1px;
+
+            background: var(--accent);
+        }
+
+        .chester-title-line span {
+            width: 7px;
+            height: 7px;
+
+            border: 1px solid var(--accent);
+            transform: rotate(45deg);
+        }
+
+
+        /* INSTRUMENTATION + DURATION */
+
+        .chester-text .chester-meta {
+            margin: 0 0 30px;
+
+            color: var(--accent);
+
+            font-size: 1.1rem;
+            line-height: 1.65;
+
+            text-align: center;
+        }
+
+        .chester-duration {
+            display: block;
+            margin-top: 8px;
+        }
+
+
+        /* MOVEMENT LIST */
+
+        .chester-movements {
+            margin: 0 0 32px;
+            padding-left: 1.8rem;
+
+            font-size: 1rem;
+            line-height: 1.6;
+
+            text-align: left;
+        }
+
+        .chester-movements li {
+            margin-bottom: 5px;
+            padding-left: 7px;
+        }
+
+
+        /* PROGRAMME NOTE */
+
+        .chester-prose {
+            margin: 0 0 22px;
+
+            font-size: 1.05rem;
+            line-height: 1.78;
+
+            text-align: justify;
+        }
+
+
+        /* COMMISSION / PREMIERE */
+
+        .chester-details {
+            margin-top: 35px;
+            padding-top: 22px;
+
+            border-top: 1px solid rgba(11, 27, 46, 0.18);
+        }
+
+        .chester-details p {
+            margin: 0 0 10px;
+
+            color: var(--muted);
+
+            font-size: 0.93rem;
+            line-height: 1.6;
+
+            text-align: left;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .chester-page {
+                padding: 40px 6% 70px;
+            }
+
+            .chester-frontispiece {
+                width: 100%;
+                max-width: 480px;
+                margin-bottom: 35px;
+            }
+
+            .chester-text h1 {
+                font-size: 2.6rem;
+            }
+
+            .chester-prose {
+                text-align: left;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header class="site-header">
+
+        <a class="site-name" href="index.html">
+            Michael Chamberlain
+        </a>
+
+        <nav>
+            <a href="music.html">Music</a>
+            <a class="active" href="compositions.html">Compositions</a>
+            <a href="events.html">Events</a>
+            <a href="tutoring.html">Tutoring</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main class="chester-page">
+
+        <div class="work-back">
+            <a href="compositions.html">
+                ← Back to compositions
+            </a>
+        </div>
+
+
+        <div class="chester-frontispiece">
+
+            <img
+                src="images/frontispieces/Old Chester-Nuts.png"
+                alt="Frontispiece for Old Chester-Nuts"
+            >
+
+        </div>
+
+
+        <section class="chester-text">
+
+            <h1>
+                Old Chester-Nuts
+            </h1>
+
+            <p class="chester-subtitle">
+                Two Songs of G. K. Chesterton
+            </p>
+
+
+            <div class="chester-title-line">
+                <span></span>
+            </div>
+
+
+            <p class="chester-meta">
+                Mezzo-soprano and Pierrot ensemble
+                (flute, clarinet, violin, cello, piano)
+
+                <span class="chester-duration">
+                    5′
+                </span>
+            </p>
+
+
+            <ol class="chester-movements">
+                <li><em>Four Clerihews</em></li>
+                <li><em>Higher Mathematics</em></li>
+            </ol>
+
+
+            <p class="chester-prose">
+                Clerihews are four-line poetic caricatures invented by
+                Edmund Clerihew Bentley, a friend of Chesterton’s,
+                reportedly while bored in a science lesson. The two exchanged
+                clerihews as schoolboys, and Bentley later published three
+                volumes of them. I set four of these to music,
+                evoking their blithe whimsy as well as the wandering
+                imaginations of bored schoolboys.
+            </p>
+
+
+            <p class="chester-prose">
+                <em>Higher Mathematics</em>, from Chesterton’s
+                <em>Songs of Education</em>, is a satire on counterintuitive
+                 mathematical results. The music adopts the perspective of an aggrieved mathematician
+                desperately trying to fathom irrefutable, paradoxical logic which simply
+                refuses to make sense (perhaps not such a leap of the imagination?).
+            </p>
+
+
+            <div class="chester-details">
+
+                <p>
+                    <strong>Commissioned by:</strong>
+                    University of St Andrews
+                </p>
+
+                <p>
+                    <strong>Premiere:</strong>
+                    1 March 2025, Lucy Schaufer,
+                    Hard Rain SoloistEnsemble,
+                    dir. Paul McCusker
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© Michael Chamberlain 2026</p>
+    </footer>
+
+</body>
+
+</html>

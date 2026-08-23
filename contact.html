@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Michael Chamberlain</title>
+
+    <meta
+        name="description"
+        content="Contact Michael Chamberlain regarding performances, composition, accompanying, tutoring and other engagements."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="site-name" href="index.html">
+            Michael Chamberlain
+        </a>
+
+        <nav>
+            <a href="music.html">Music</a>
+            <a href="compositions.html">Compositions</a>
+            <a href="events.html">Events</a>
+            <a href="tutoring.html">Tutoring</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main class="page-content">
+
+        <section class="contact-section">
+
+            <h1 class="page-title">
+                Contact
+            </h1>
+
+            <p class="contact-intro">
+                For enquiries concerning performances, composition,
+                accompanying, tutoring, other engagements, or just getting in touch, please use
+                the form below.
+            </p>
+
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/mkjwekrb"
+                method="POST"
+            >
+
+                <div class="contact-field">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-field">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-field">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="contact-field">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="8"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="contact-actions">
+
+                    <button
+                        class="button"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© Michael Chamberlain 2026</p>
+    </footer>
+
+</body>
+
+</html>
